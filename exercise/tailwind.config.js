@@ -10,7 +10,8 @@ export default {
         'Lora': ["Lora'", "serif"],
         'poppins': ['Poppins', 'sans-serif'],
         'montserrat': ['Montserrat', 'sans-serif'],
-        'play': ['Playfair Display', 'serif']
+        'play': ['Playfair Display', 'serif'],
+        'caveat': ['Caveat', 'cursive']
       },
       screens: {
         'HP' : '500px',
