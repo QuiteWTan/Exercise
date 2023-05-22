@@ -15,11 +15,11 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20 max-w-[1800px] mx-auto px-4">
             <h3 className="w-full text-4xl font-bold font-play text-left">Otter</h3>
             <ul className="md:flex hidden">
-                <li className="p-3">Home</li>
-                <li className="p-3">About</li>
-                <li className="p-3 mr-10">Contact</li>
-                <li className="flex text-white bg-gray-500 p-1 mt-2 rounded-xl h-8 w-24 justify-center">Sign in</li>
-                <li className="p-3">Register</li>
+                <li className="p-2 "><a href="" className="hover:text-gray-400 duration-500 ease-in-out">Home</a></li>
+                <li className="p-2"><a href="" className="hover:text-gray-400 duration-500 ease-in-out">About</a></li>
+                <li className="p-2 mr-10"><a href="" className="hover:text-gray-400 duration-500 ease-in-out">Contact</a></li>
+                <li className="flex text-white bg-gray-500 p-1 mt-1 rounded-xl h-8 w-24 justify-center"><a href="" className="bg-gray-500 hover:text-gray-400 duration-500 ease-in-out">Sign Up</a></li>
+                <li className="p-2"><a href="" className="hover:text-gray-400 duration-500 ease-in-out">Login</a></li>
             </ul>
             <div onClick={ClickNav} className="md:hidden">
                 {ChangeIcon ? <AiOutlineMenu size={20} className=" transition-transform"/> : <AiOutlineClose size={20} className="transition-transform"/>}

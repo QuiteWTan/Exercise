@@ -5,6 +5,7 @@ import FContent from './components/FirstSlideContent'
 import SContent from './components/SecondSlideContent'
 import Social from  './components/Social'
 import ContactSection from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +18,7 @@ function App() {
         <SContent/>
         <Social/>
         <ContactSection/>
+        <Footer/>
       </div>
     </>
   )
