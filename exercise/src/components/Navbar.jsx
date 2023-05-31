@@ -2,7 +2,7 @@ import { useState } from "react"
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
 
 const Navbar = () => {
-    const ChangeStyles = ['fixed flex left-[-65%] top-0 h-full border-r border-r-gray-900 bg-gray-500 ease-in-out duration-500','fixed flex left-0 top-0 w-[50%] h-full border-r border-r-gray-900 bg-gray-500 ease-in-out duration-500 justify-center HP:w-[30%]'];
+    const ChangeStyles = ['fixed flex left-[-65%] top-0 h-full border-r border-r-gray-900 bg-gray-500 ease-in-out duration-500','fixed flex left-0 top-0 h-full border-r border-r-gray-900 bg-gray-500 ease-in-out duration-500 justify-center w-[100%]'];
     const [Change, setChange] = useState(0);
     const [ChangeIcon, setChangeIcon] = useState(true);
 
@@ -24,7 +24,7 @@ const Navbar = () => {
             <div onClick={ClickNav} className="md:hidden">
                 {ChangeIcon ? <AiOutlineMenu size={20} className=" transition-transform"/> : <AiOutlineClose size={20} className="transition-transform"/>}
             </div>
-            <div className={ChangeStyles[Change]} >
+            <div className={ChangeStyles[Change]} onClick={ClickNav}>
                 <h3 className="pt-2 text-4xl font-bold font-play fixed bg-gray-500 text-center ml-5">Otter</h3>
                 <ul className="pt-20 ml-5 bg-gray-500 ">
                     <li className="p-3 bg-gray-500 ">HOME</li>
